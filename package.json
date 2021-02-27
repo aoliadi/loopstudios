@@ -1,0 +1,16 @@
+{
+  "name": "loopstudios-landing-page-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "scss": "node-sass --watch --output-style=compressed scss -o css --recursive"
+  },
+  "keywords": [],
+  "author": "aoliadi",
+  "license": "ISC"
+}
