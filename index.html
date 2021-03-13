@@ -1,20 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Frontend Mentor | Loopstudios landing page</title>
 </head>
+<style>
+    
+</style>
 <body>
+    <header class="header__container">
+        <nav class="header__nav-bar-container">
+            <a href="" class="">
+                <img src="./images/logo.svg" alt="logo-image" class="logo-image">
+            </a>
+            <ul class="header__nav-list-container hide--mobile">
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        Careers
+                    </a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        Events
+                    </a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        Products
+                    </a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        Support
+                    </a>
+                </li>
+            </ul>
+            <button class="header__hamburger-container hide--desktop">
+                <img src="./images/icon-hamburger.svg" alt="hamburger-button" class="header__hamburger-icon">
+            </button>
+        </nav> <!-- header__nav-bar-container --> 
+        <section class="header__hero-container">
+            <h1 class="header__hero-heading">
+                Immersive experiences that deliver
+            </h1>
+        </section> <!-- header__hero-container -->
+    </header> <!-- header__container -->
+    <article class="about__container">
+        <section class="about__img-container">
+            <img src="./images/desktop/image-interactive.jpg" alt="vr-picture" class="vr-image">
+        </section> <!-- about__img-container -->
+        <section class="about__description-container">
+            <h2 class="about__description--header">
+                The leader in interactive VR
+            </h2>
+            <p class="about__description--paragraph">
+                Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
+            </p>
+        </section> <!-- about__description-container -->
+    </article> <!-- about__container -->
+    <article class="creations__container">
+        <section class="creations__flex-top">
+            <h2 class="creations__header">
+                our creations
+            </h2>
+            <a href="" class="btn creations__btn hide--mobile">
+                see all
+            </a>
+        </section> 
+        <section class="creations__flex-bottom">
+            <ul class="creations__list-container">
+                <li class="creations__list-item">
+                    <a href="" class="creations__list-link">
+                        <small>Deep earth</small>   
+                    </a>
+                </li>
+                <li class="creations__list-item">
+                    <a href="" class="creations__list-link">
+                        <small>Night arcade</small>
+                    </a>
+                </li>
+                <li class="creations__list-item">
+                    <a href="" class="creations__list-link">
+                        <small>Soccer team VR</small>
+                    </a>
+                </li>
+                <li class="creations__list-item">
+                    <a href="" class="creations__list-link">
+                        <small id="smaller">The grid</small>
+                    </a>
+                </li>
+                <li class="creations__list-item">
+                    <a href="" class="creations__list-link">
+                        <small>From up above VR</small>
+                    </a>
+                </li>
+                <li class="creations__list-item">
+                    <a href="" class="creations__list-link">
+                        <small>Pocket borealis</small>
+                    </a>
+                </li>
+                <li class="creations__list-item">
+                    <a href="" class="creations__list-link">
+                        <small>The curiosity</small>
+                    </a>
+                </li>
+                <li class="creations__list-item">
+                    <a href="" class="creations__list-link">
+                        <small>Make it fisheye</small>
+                    </a>
+                </li>
+            </ul>
+            <a href="" class="btn creations__btn creations__btn--2 hide--desktop">
+                see all
+            </a>
+        </section>
+    </article> <!-- creations__container -->
+    <footer class="footer__container">
+        <section class="footer__flex-top">
+            <nav class="footer__nav-bar-container">
+                <a href="" class="">
+                    <img src="./images/logo.svg" alt="logo-image" class="logo-image">
+                </a>
+                <ul class="footer__nav-list-container">
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link">
+                            <img src="./images/icon-facebook.svg" alt="facebook" class="sm-icon">
+                        </a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link">
+                            <img src="./images/icon-twitter.svg" alt="twitter" class="sm-icon">
+                        </a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link">
+                            <img src="./images/icon-pinterest.svg" alt="pinterest" class="sm-icon">
+                        </a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link">
+                            <img src="./images/icon-instagram.svg" alt="instagram" class="sm-icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav> <!-- footer__nav-bar-container --> 
+        </section> <!-- footer__flex-top -->
+        <section class="footer__flex-bottom">
+            <ul class="header__nav-list-container">
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        About
+                    </a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        Careers
+                    </a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        Events
+                    </a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        Products
+                    </a>
+                </li>
+                <li class="header__nav-list-item">
+                    <a href="" class="header__nav-link">
+                        Support
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__copyright">
+                © 2021 Loopstudios. All rights reserved.
+            </p>
+        </section> <!-- footer__flex-bottom -->
+    </footer> <!-- footer__container -->
+
+<!--
+ 
   About
   Careers
   Events
@@ -23,25 +197,11 @@
 
   Immersive experiences that deliver
 
-  The leader in interactive VR
+ 
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+  
 
-  Our creations
 
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
 
   About
   Careers
@@ -49,11 +209,14 @@
   Products
   Support
 
-  © 2021 Loopstudios. All rights reserved.
+  
+-->
+<!--
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+-->
 </body>
 </html>
