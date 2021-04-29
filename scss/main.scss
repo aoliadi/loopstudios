@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import "partials/reset";
+@import "partials/mixins";
+@import "partials/style-guide";
+@import "partials/placeholders";
+@import "partials/components/nav-bar";
+@import "partials/components/about";
+@import "partials/components/our-creations";
+@import "partials/components/footer";
+
+@media (min-width: 1050px) {
+
+    .hide--desktop { 
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1050px) {
+    
+    .hide--mobile {
+        display: none;
+    }
+
+}

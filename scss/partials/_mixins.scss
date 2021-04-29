@@ -1,0 +1,21 @@
+@mixin bd($color: blue, $width: 2px) {
+    border: $width solid $color
+}
+
+@mixin flex( $dir: row, $wrap: wrap ) {
+    display: flex;
+    flex-flow: $dir $wrap;
+    
+}
+
+@mixin top($top) {
+    padding: $top 2em 0;
+}
+
+@mixin insert-backgrounds($platform, $list) {
+    @each $position, $name in $list {
+        &item:nth-of-type( #{$position} ) {
+            background-image: url("../images/#{$platform}/image-#{$name}.jpg");
+        }
+    }
+}

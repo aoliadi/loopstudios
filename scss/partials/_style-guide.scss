@@ -1,0 +1,63 @@
+$dark-gray-color: hsl(0, 0%, 55%);
+$very-dark-gray-color: hsl(0, 0%, 41%);
+$white-color: hsl(0, 0%, 100%);
+$black-color: hsl(0, 0%, 0%);
+
+$weight300: 300;
+$weight400: 400;
+$hover-border-width: 40%;
+$margin-left: 2em;
+
+//$container-width: 1240px;
+// $container-width: 1114px;
+// $header-width: 570px;
+
+$desktop-bg-images: (
+    1: "deep-earth", 
+    2: "night-arcade",
+    3: "soccer-team",
+    4: "grid",
+    5: "from-above",
+    6: "pocket-borealis",
+    7: "curiosity",
+    8: "fisheye"
+);
+
+$mobile-bg-images: (
+    1: "deep-earth", 
+    2: "night-arcade",
+    3: "soccer-team",
+    4: "grid",
+    5: "from-above",
+    6: "pocket-borealis",
+    7: "curiosity",
+    8: "fisheye"
+);
+
+.btn {
+
+    @extend %font-alata;
+    font-size: 1em;
+    @extend %tt-uppercase;
+    letter-spacing: 0.32em;
+
+    @extend %black-font;
+    background-color: $white-color;
+    @include bd($black-color, 1px);
+
+    // height: 40px;
+    // width: 155px;
+    max-width: 316px;
+
+    display: grid;
+    place-items: center;
+
+    padding: .5em 2em;
+
+    transition: background-color .3s linear;
+
+    &:hover {
+        background-color: $black-color;
+        @extend %white-font;
+    }
+}

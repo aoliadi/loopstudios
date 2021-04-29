@@ -1,0 +1,127 @@
+.header__ {
+    &container {
+        @extend %white-font;
+        background-image: url("../images/desktop/image-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        @media (max-width: 640px) {
+            background-image: url("../images/mobile/image-hero.jpg");
+        }
+        // padding: 4em 14.7em;
+        // background-color: red;
+        // padding: 65px 0;
+        // display: none;
+    }
+    
+    &nav- {
+        
+        &bar-container {
+            @extend %container-width;
+            @include flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        &list- {
+
+            &container {
+
+                padding: .5em;
+                @include flex;
+                align-items: center;
+                justify-content: center;
+                
+                > li:not(:first-of-type) {
+                    margin-left: $margin-left;            
+                }
+            }
+
+            &item {
+                position: relative;
+                
+                &::after {
+                    content: "";
+
+                    width: $hover-border-width;
+                    height: 0;
+                    // border: 2px solid red;
+                    border-bottom: 2px solid transparent;
+
+                    position: absolute;
+                    left: 50%;  bottom: 0;
+
+                    transform: translateX( -50% );
+                    transition: all .25s linear;
+                }
+    
+                &:hover::after {
+                    border-bottom: 2px solid $white-color;
+                }
+            }
+        } 
+            
+        &link {
+            // @include bd;
+            // @extend %font-josefin;
+            @extend %font-alata;
+            font-size: .85em;
+            font-weight: $weight400;
+            padding-bottom: .55em;
+        }
+        
+        
+    }
+
+    &hamburger- {
+
+        &container {
+            // @include bd;
+            background-color: transparent;
+        }
+
+        &icon {
+            // @include bd(red)
+            cursor: pointer;
+        }
+
+    } 
+    
+    &hero- {
+        
+        &container {
+            @extend %container-width;
+            // @extend %font-alata;
+            // border: 2px solid $white-color;
+            // max-width: 1114px;
+            // margin: 0 auto;
+            // max-width: 655px;
+            // height: fit-content;
+            // max-width: 65%;
+            // width: fit-content;
+            // min-height: 35vh;
+            // margin: 0 auto;
+        }
+        
+        &heading {
+            @extend %headers;
+            font-size: 4.25vmax;
+            width: 100%;
+            max-width: 650px;
+            @include bd($white-color);
+            padding: 3.12rem;
+            margin-bottom: 1em;
+        }
+    } 
+}
+
+.logo-image {
+    // @include bd;
+    width: 80%;
+}
+
+
+
+// %container {
+//     padding: 
+// }

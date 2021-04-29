@@ -1,0 +1,66 @@
+.about__ {
+    &container {
+        @extend %container-width; 
+        position: relative;
+        padding: 10em 0 0; 
+        
+        @media (max-width: 1050px) {
+            text-align: center;
+            @include flex;
+            padding: 5em 0; 
+
+            // @include bd(red); 
+        } 
+    } 
+
+    &img-container { 
+        width: 100%;
+        max-width: 730px; 
+        
+        @media (max-width: 1050px) {
+            margin: 0 auto;
+        }
+    }
+    
+    &description- {
+
+        &container {
+            background-color: $white-color;
+            padding: 6em 0 0 6em;
+            width: 100%;
+            max-width: 546px;
+            position: absolute;
+            right: 0;   bottom: 0;
+            @extend %margin-auto;
+
+            @media (max-width: 1050px) {
+                position: relative;
+                text-align: center;
+                padding: 0;
+            }
+        }
+
+        &-header {
+            @extend .creations__header;
+            margin-bottom: .35em; 
+
+            @media (max-width: 1050px) {
+                margin-top: .8em;
+                margin-bottom: .5em;
+            }
+        }
+
+        &-paragraph {
+            @extend %font-alata;
+            font-weight: $weight300;
+            color: $dark-gray-color;
+            line-height: 1.8em;
+            font-size: .9em; 
+        }
+
+    }  
+}
+
+.vr-image {
+    width: 100%;
+}

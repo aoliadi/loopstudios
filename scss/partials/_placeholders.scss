@@ -1,0 +1,60 @@
+%container-width {
+    // max-width: $container-width;
+    width: 80%;
+    max-width: 1114px;
+    padding: 4em 0;
+    @extend %margin-auto;
+}
+
+%headers {
+    @extend %font-josefin;
+    font-size: 3em;
+    font-weight: $weight300;
+    @extend %tt-uppercase;
+    max-width: 100%;
+    
+    @media (max-width: 1050px) {
+        text-align: center;
+    }
+    
+    @media (max-width: 640px) {
+        font-size: 1.65em;
+    }
+}
+
+%tt-uppercase {
+    text-transform: uppercase;
+}
+
+%ta-center {
+   text-align: center;
+}
+
+%font-alata {
+    font-family: 'Alata', sans-serif;
+}
+
+%font-josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+%white-font {
+    color: $white-color;
+}
+%black-font {
+    color: $black-color;
+}
+//
+//%section-padding {
+//    padding: 8rem 1.5rem;
+//}
+
+%margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//
+//%header-mb {
+//    margin-bottom: 20px;
+//}
